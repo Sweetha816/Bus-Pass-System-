@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Based Bus Pass System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🚌 Cloud Bus Pass System</h1>
+  
+  <form id="busForm">
+    <label for="name">Passenger Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="route">Route:</label>
+    <input type="text" id="route" required>
+
+    <label for="price">Price:</label>
+    <input type="number" id="price" required>
+
+    <button type="submit">Book Pass</button>
+  </form>
+
+  <h2>Booked Passes</h2>
+  <ul id="passesList"></ul>
+
+  <script src="firebase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
